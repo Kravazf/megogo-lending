@@ -1,0 +1,39 @@
+.header__nav {
+  position: fixed;
+  top: 5px;
+  left: 7px;
+  z-index: 100;
+
+  & #opener {
+    visibility: hidden;
+    position: absolute;
+    opacity: 0;
+  }
+
+  & .opener {
+    display: block;
+    position: relative;
+    width: 32px;
+    height: 32px;
+    z-index: 99;
+
+    span, &:after, &:before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 16px;
+      height: 2px;
+      background-color: var(--primary-color);
+    }
+
+    &:before {
+      top: calc(50% - 5px);
+    }
+    
+    &:after {
+      top: calc(50% + 5px);
+    }
+  }
+}

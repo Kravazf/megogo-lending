@@ -1,0 +1,65 @@
+body {
+  color: var(--primary-color);
+  font-family: 'Montserrat', 'Arial', 'Helvetica', 'sans-serif';
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: translateY(-0.4rem);
+    color: var(--primary-color);
+  }
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 24px;
+  line-height: 28px;
+}
+
+p {
+  font-weight: 400;
+}
+
+.wrapper {
+  width: 100%;
+  min-height: 100vh;
+  color: var(--primary-color);
+  position: relative;
+  background-color: rgba(16, 16, 16);
+}
+
+main {
+  height: 100vh;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+
+  > section {
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    min-height: 100vh; 
+  }
+}
