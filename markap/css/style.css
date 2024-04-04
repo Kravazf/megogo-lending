@@ -463,8 +463,6 @@ main > section {
 
 .page__3-footer-content {
   margin-top: 6.2vh;
-  position: relative;
-  z-index: 10;
 }
 @media (max-height: 470px) {
   .page__3-footer-content {
@@ -501,7 +499,6 @@ main > section {
 
 .page__3-price-content {
   margin-top: 1vh;
-  opacity: 0.6;
   font-size: 12px;
   line-height: 14px;
   letter-spacing: 0.8px;
